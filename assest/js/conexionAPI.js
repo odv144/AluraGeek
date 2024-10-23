@@ -1,11 +1,11 @@
 async function listarVideos() {
-  const conexion = await fetch(	https://sheetdb.io/api/v1/701kawqlfhook");
+  const conexion = await fetch("https://sheetdb.io/api/v1/701kawqlfhook");
   const conexionConvertida = conexion.json();
   return conexionConvertida;
 }
 
 async function crearVideo(nombre,precio,imagen) {
-  const conexion = await fetch("	https://sheetdb.io/api/v1/701kawqlfhook", {
+  const conexion = await fetch("https://sheetdb.io/api/v1/701kawqlfhook", {
     method: "POST",
     headers: { "Content-type": "application/json" },
     body: JSON.stringify({
@@ -20,7 +20,7 @@ async function crearVideo(nombre,precio,imagen) {
 
 async function deleteProducto(id){
   console.log(id)
-  const conexion = await fetch(`	https://sheetdb.io/api/v1/701kawqlfhook/${id}`, {
+  const conexion = await fetch(`https://sheetdb.io/api/v1/701kawqlfhook/${id}`, {
     method: "DELETE",
 
 })

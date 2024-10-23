@@ -8,8 +8,8 @@ const params = new URLSearchParams(url.search);
 // Recuperar los valores de los parámetros
 const id = params.get('id');
 const detalles = document.querySelector(".detalles");
-const insertarDetalles=async()=>{
-    const response=await mostrarDetalles(id);
+const insertarDetalles=()=>{
+    const response= mostrarDetalles(id);
     console.log(response)
     const titulo = document.createElement('h2');
     const img = document.createElement('img');

@@ -1,0 +1,31 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "React",
+      "precio": 333,
+      "img": "/assest/img/react.svg"
+    },
+    {
+      "id": "2",
+      "nombre": "JAVA",
+      "precio": 3943,
+      "img": "/assest/img/react.svg",
+      "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1276.1319093110367!2d-59.35782525038564!3d-28.488819013348227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944f1b754f3f8e13%3A0xe6e0375f0199eff8!2sCompushop!5e0!3m2!1ses!2sar!4v1729679055670!5m2!1ses!2sar"
+    },
+    {
+      "id": "cedc",
+      "nombre": "Game Boy Classic",
+      "precio": "60",
+      "img": "https://i.postimg.cc/WtLx7VG9/image-2.png",
+      "mapa":"https://www.google.com/maps/embed?pb=!1m18!1"
+    },
+    {
+      "id": "858b",
+      "nombre": "Stormtrooper",
+      "precio": "456",
+      "img": "https://i.postimg.cc/9XRM1BPT/unsplash-6-FDXGY9-J6y4.png",
+      "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1170.2247994277984!2d-59.357493789066424!3d-28.48821426661905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944f1b865184943d%3A0xbeea7b7d3442fae!2sCasa%20Serafini!5e0!3m2!1ses!2sar!4v1729679231267!5m2!1ses!2sar"
+    }
+  ]
+}

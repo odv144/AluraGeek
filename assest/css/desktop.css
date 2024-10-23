@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bordo: #8c0375;
+  --rosado: #c004d9;
+  --lila: #9303a6;
+  --violeta: #5d04d9;
+  --cobalto: #03318c;
+}
+body {
+  width: 100vw;
+  /* background-color: rgb(51, 51, 51); */
+}
+header {
+  /* background-color: var(--violeta); */
+  background-image: linear-gradient(
+    35deg,
+    #170235cb,
+    #dabaf4,
+    #6901f3,
+    #f96dc17a,
+    #170235cb
+  );
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
+.corazon {
+  color: red;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+
+.productos {
+  width: 75%;
+  border-right: 5px solid black;
+  padding: 5px;
+  text-align: center;
+}
+.contenedor {
+  /* background-color: #c004d9; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    35deg,
+    #61b9f3cb,
+    /* Rojo */ #dabaf4,
+
+    /* Violeta */ #f96dc17a /* Azul */
+  );
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 15px;
+  border: 2px solid;
+  border-color: var(--violeta);
+}
+.card:hover {
+  box-shadow: 0px 0px 10px 5px var(--violeta);
+  transform: scale(1.02);
+}
+.card img {
+  text-align: center;
+  height: 200px;
+}
+.card-titulo {
+  text-align: center;
+  font-size: 1.5em;
+  color: #121212;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 2px 2px 3px rgb(147, 1, 244);
+}
+.precio-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  padding: 3px;
+  margin: 3px;
+}
+.icon-trash {
+  width: 30px;
+  max-height: 30px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.panel h2 {
+  color: var(--bordo);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  border-radius: 15px;
+  margin: 5px;
+  padding: 5px;
+  color: var(--cobalto);
+  font-weight: 700;
+  padding-left: 15px;
+  border: 1px solid #8e8e8e;
+}
+.form input:focus {
+  outline: 3px solid var(--cobalto);
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  justify-content: space-between;
+}
+.btn-form {
+  width: 80px;
+  background-color: #03318c;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 15px;
+}
+footer {
+    background-image: linear-gradient(
+    85deg,
+    #6901f3,
+    #170235cb,
+    #6901f3
+  );
+ padding:1%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+.mapa{
+  width: 480px;
+  height: 600px;
+}

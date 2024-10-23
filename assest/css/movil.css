@@ -1,0 +1,12 @@
+@media (max-width: 360px) {
+    main{
+        width: 100vw;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .productos{
+        border:none;
+        width:auto;
+    }
+}

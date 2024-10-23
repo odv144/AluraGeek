@@ -4,9 +4,7 @@
   "description": "proyecto de Alura para FrontEnd",
   "main": "index.js",
   "scripts": {
-    "dev": "json-server --watch db.json --port 3001",
-    "build": "npm run build",
-    "start": "npm run build && serve -s build"
+     "build": "npm run build"  
   },
   "author": "",
   "license": "ISC",

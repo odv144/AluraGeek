@@ -4,7 +4,7 @@
   "description": "proyecto de Alura para FrontEnd",
   "main": "index.js",
   "scripts": {
-     "build": "npm run build"  
+   
   },
   "author": "",
   "license": "ISC",

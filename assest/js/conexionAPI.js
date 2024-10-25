@@ -1,5 +1,5 @@
 async function listarVideos() {
-  const conexion = await fetch("https://sheetdb.io/api/v1/701kawqlfhook");
+  const conexion = await fetch("https://alurageek-api.vercel.app/");
   const conexionConvertida = conexion.json();
   return conexionConvertida;
 }
@@ -29,6 +29,6 @@ async function deleteProducto(id){
 
 export const conexionAPI = {
   listarVideos,
-  crearVideo,
+  // crearVideo,
   deleteProducto
 };

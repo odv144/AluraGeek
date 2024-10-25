@@ -1,5 +1,5 @@
 async function listarVideos() {
-  const conexion = await fetch("https://alurageek-api.vercel.app/");
+  const conexion = await fetch("https://alurageek-api.vercel.app");
   const conexionConvertida = conexion.json();
   return conexionConvertida;
 }

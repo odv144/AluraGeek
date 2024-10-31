@@ -1,11 +1,11 @@
 async function listarVideos() {
-  const conexion = await fetch("http://localhost:3001/productos");
+  const conexion = await fetch("https://apigeek.vercel.app/productos");
   const conexionConvertida = conexion.json();
   return conexionConvertida;
 }
 
 async function crearVideo(nombre,precio,imagen) {
-  const conexion = await fetch("http://localhost:3001/productos", {
+  const conexion = await fetch("https://apigeek.vercel.app/productos", {
     method: "POST",
     headers: { "Content-type": "application/json" },
     body: JSON.stringify({
@@ -20,7 +20,7 @@ async function crearVideo(nombre,precio,imagen) {
 
 async function deleteProducto(id){
   console.log(id)
-  const conexion = await fetch(`http://localhost:3001/productos/${id}`, {
+  const conexion = await fetch(`https://apigeek.vercel.app/productos/${id}`, {
     method: "DELETE",
 
 })

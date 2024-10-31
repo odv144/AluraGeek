@@ -32,7 +32,7 @@ const insertarDetalles=async()=>{
 }
  const mostrarDetalles=async(id)=>{
     // Llamar a la API para obtener los detalles del producto
-    const conexion = await fetch(`http://localhost:3001/productos/${id}`);
+    const conexion = await fetch(`https://apigeek.vercel.app/productos/${id}`);
     // Obtener los detalles del producto
     const conexionConvertida = conexion.json();
    

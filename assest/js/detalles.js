@@ -1,4 +1,4 @@
-import { conexionAPI } from "./conexionAPI.js";
+import { conexionAPI, URL_BASE } from "./conexionAPI.js";
 // Obtener la URL actual
 const urlActual = window.location.href;
 // Crear una instancia de URL
@@ -10,13 +10,13 @@ const id = params.get('id');
 const detalles = document.querySelector(".detalles");
 const insertarDetalles=async()=>{
     const response= await mostrarDetalles(id);
-    console.log(response)
+   
     const titulo = document.createElement('h2');
     const img = document.createElement('img');
     const contenedorMapa= document.querySelector(".mapa")
     const mapa = document.createElement('iframe');
 
-    titulo.textContent="hola mundo"+response.nombre;
+    titulo.textContent=response.nombre;
     img.src = response.img;
     
     mapa.src= response.mapa;
@@ -32,7 +32,7 @@ const insertarDetalles=async()=>{
 }
  const mostrarDetalles=async(id)=>{
     // Llamar a la API para obtener los detalles del producto
-    const conexion = await fetch(`https://apigeek.vercel.app/productos/${id}`);
+    const conexion = await fetch(`${URL_BASE}/productos/${id}`);
     // Obtener los detalles del producto
     const conexionConvertida = conexion.json();
    

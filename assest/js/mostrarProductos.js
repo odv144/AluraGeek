@@ -4,9 +4,12 @@ const lista = document.querySelector("[data-lista]");
 function crearCard(titulo, imagen, precio,id) {
   const producto = document.createElement("article");
   producto.classList.add("card");
-  producto.addEventListener('click',()=>{ 
-    const url = `detalle.html?id=${encodeURIComponent(id)}`;
-    window.location.href = url;});
+
+  //Opcion deshabilitada para mostrar detalles
+  
+  // producto.addEventListener('click',()=>{ 
+  //   const url = `detalle.html?id=${encodeURIComponent(id)}`;
+  //   window.location.href = url;});
 
   producto.innerHTML = ` <img src=${imagen} alt="titulo" />
                   <h4 class='card-titulo'>${titulo}</h4>

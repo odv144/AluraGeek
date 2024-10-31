@@ -1,11 +1,15 @@
+// const URL_BASE="https://apigeek.vercel.app"
+export const URL_BASE="http://localhost:3000"
+
+
 async function listarVideos() {
-  const conexion = await fetch("https://apigeek.vercel.app/productos");
+  const conexion = await fetch(`${URL_BASE}/productos`);
   const conexionConvertida = conexion.json();
   return conexionConvertida;
 }
 
 async function crearVideo(nombre,precio,imagen) {
-  const conexion = await fetch("https://apigeek.vercel.app/productos", {
+  const conexion = await fetch(`${URL_BASE}/productos`, {
     method: "POST",
     headers: { "Content-type": "application/json" },
     body: JSON.stringify({
@@ -20,7 +24,7 @@ async function crearVideo(nombre,precio,imagen) {
 
 async function deleteProducto(id){
   console.log(id)
-  const conexion = await fetch(`https://apigeek.vercel.app/productos/${id}`, {
+  const conexion = await fetch(`${URL_BASE}/productos/${id}`, {
     method: "DELETE",
 
 })
@@ -28,6 +32,7 @@ async function deleteProducto(id){
 
 
 export const conexionAPI = {
+
   listarVideos,
   // crearVideo,
   deleteProducto

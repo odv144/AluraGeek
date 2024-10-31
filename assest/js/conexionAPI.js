@@ -29,6 +29,6 @@ async function deleteProducto(id){
 
 export const conexionAPI = {
   listarVideos,
-  crearVideo,
+  // crearVideo,
   deleteProducto
 };

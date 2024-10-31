@@ -9,7 +9,7 @@ const params = new URLSearchParams(url.search);
 const id = params.get('id');
 const detalles = document.querySelector(".detalles");
 const insertarDetalles=async()=>{
-    const response=await mostrarDetalles(id);
+    const response= await mostrarDetalles(id);
     console.log(response)
     const titulo = document.createElement('h2');
     const img = document.createElement('img');

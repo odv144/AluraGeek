@@ -1,5 +1,5 @@
 import { conexionAPI } from "./conexionAPI.js";
-var posImagen=0
+let posImagen=0
 const arrayImagen=[]
 const galeriaImagen = document.querySelector(".galeria-imagen");
 const consultarImagenes=async ()=>{
@@ -15,22 +15,33 @@ const consultarImagenes=async ()=>{
    
         
 }
-const mostrarImagen=(pos)=>{
-    console.log(arrayImagen[pos]) 
-    const eleDiv = document.querySelector(".imagen")
-        eleDiv.innerHTML = `<img src="${arrayImagen[pos]}" alt="${arrayImagen[pos]}">`
-        eleDiv.classList.add("imagen");
-        galeriaImagen.appendChild(eleDiv)
+function mostrarImagen(pos){
+      const eleDiv = document.querySelector('[data-galeria]');
+        eleDiv.src=arrayImagen[pos]
+        
 }
 
 const imagenAtras=document.querySelector("[data-atras")
 imagenAtras.addEventListener("click",()=>{
-    (posImagen>0)? posImagen--: posImagen
+    const galeria=document.querySelector('.galeria-imagen');
+    let posImagen = parseInt(galeria.getAttribute('data-cont'))
+    if(posImagen<arrayImagen.length-1){
+        posImagen++;
+        galeria.setAttribute('data-cont',posImagen);
+    }
+    
     mostrarImagen(posImagen);
+
+   
 })
 const imagenSiguiente=document.querySelector("[data-siguiente")
 imagenSiguiente.addEventListener("click",()=>{
-    (posImagen>arrayImagen.length())?posImagen++:posImagen;
+    const galeria=document.querySelector('.galeria-imagen');
+    let posImagen = parseInt(galeria.getAttribute('data-cont'))
+    if(posImagen>0){
+        posImagen--;
+        galeria.setAttribute('data-cont',posImagen);
+    }
     mostrarImagen(posImagen);
 })
 
@@ -45,6 +56,7 @@ const formulario = document.querySelector("[data-formulario]")
 
 const cargarImagen = (event)=>{
     const sele=document.querySelector("[data-imagen]");  
+    console.log(event.target.src)
     sele.value= event.target.src
 }
 
@@ -54,8 +66,14 @@ async function crearProducto(evento){
     const nombre = document.querySelector("[data-nombre]").value;
     const precio = document.querySelector("[data-precio]").value;
     const imagen = document.querySelector("[data-imagen]").value;
-    await conexionAPI.crearVideo(nombre,precio,imagen);
-    window.location.reload();
+    if(arrayImagen.includes(imagen)){
+        console.log(imagen)
+        await conexionAPI.crearVideo(nombre,precio,imagen);
+        window.location.reload();
+    }else{
+       alert("Esta intentando agregar imagen invalida");
+      
+    }
 }
 
 formulario.addEventListener('submit',evento=>crearProducto(evento));

@@ -1,5 +1,5 @@
-// const URL_BASE="https://apigeek.vercel.app"
-export const URL_BASE="http://localhost:3000"
+export const URL_BASE="https://apigeek.vercel.app"
+// export const URL_BASE="http://localhost:3000"
 
 
 async function listarVideos() {
@@ -34,6 +34,6 @@ async function deleteProducto(id){
 export const conexionAPI = {
 
   listarVideos,
-  // crearVideo,
+  crearVideo,
   deleteProducto
 };

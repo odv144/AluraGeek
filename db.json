@@ -1,31 +1,52 @@
 {
   "productos": [
     {
-      "id": "1",
-      "nombre": "React",
-      "precio": 333,
-      "img": "/assest/img/react.svg"
+      "id": "85e3",
+      "nombre": "Memoria DDR4",
+      "precio": "23659",
+      "img": "https://i.postimg.cc/Z5t38Gq7/concepto-13309551.jpg"
     },
     {
-      "id": "2",
-      "nombre": "JAVA",
-      "precio": 3943,
-      "img": "/assest/img/react.svg",
-      "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1276.1319093110367!2d-59.35782525038564!3d-28.488819013348227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944f1b754f3f8e13%3A0xe6e0375f0199eff8!2sCompushop!5e0!3m2!1ses!2sar!4v1729679055670!5m2!1ses!2sar"
+      "id": "182f",
+      "nombre": "Disco SSD 480GB",
+      "precio": "45626",
+      "img": "https://i.postimg.cc/WbJgJNsq/Markvision-Disco-SSD-480-Gb-Sata-interno-Bulk-MVSD480-G25.jpg"
     },
     {
-      "id": "cedc",
-      "nombre": "Game Boy Classic",
-      "precio": "60",
-      "img": "https://i.postimg.cc/WtLx7VG9/image-2.png",
-      "mapa":"https://www.google.com/maps/embed?pb=!1m18!1"
+      "id": "2c32",
+      "nombre": "Motherboard B450",
+      "precio": "65459",
+      "img": "https://i.postimg.cc/0QBKb33C/500.png"
     },
     {
-      "id": "858b",
-      "nombre": "Stormtrooper",
-      "precio": "456",
-      "img": "https://i.postimg.cc/9XRM1BPT/unsplash-6-FDXGY9-J6y4.png",
-      "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1170.2247994277984!2d-59.357493789066424!3d-28.48821426661905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944f1b865184943d%3A0xbeea7b7d3442fae!2sCasa%20Serafini!5e0!3m2!1ses!2sar!4v1729679231267!5m2!1ses!2sar"
+      "id": "ba69",
+      "nombre": "Memoria Ram 3200",
+      "precio": "27462",
+      "img": "https://i.postimg.cc/gJS83rw8/ram-ddr4-715x374.webp"
+    },
+    {
+      "id": "a028",
+      "nombre": "Gabinete",
+      "precio": "36985",
+      "img": "https://i.postimg.cc/zGY9WfYy/GAB1698.jpg"
+    },
+    {
+      "id": "77ed",
+      "nombre": "Teclado Logitech",
+      "precio": "28003",
+      "img": "https://i.postimg.cc/vZ7CvdG3/TEC280.jpg"
+    },
+    {
+      "id": "be05",
+      "nombre": "Fuente 600w Reales",
+      "precio": "71256",
+      "img": "https://i.postimg.cc/ZqVg1FBN/VAR759.jpg"
+    },
+    {
+      "id": "54aa",
+      "nombre": "Placa de Video",
+      "precio": "95025",
+      "img": "https://i.postimg.cc/QMXw4nts/VGA1418.jpg"
     }
   ]
 }

@@ -149,7 +149,25 @@ footer {
   color: white;
   font-weight: 600;
 }
+.galeria-imagen{
+  display:flex;
+  flex-direction: row;
+}
 .mapa{
   width: 480px;
   height: 600px;
+}
+.icon{
+  font-size: 2em;
+}
+.galeria{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.imagen img{
+  width: 200px;
+  height:200px;
 }

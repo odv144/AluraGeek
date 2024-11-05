@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <link href="/assest/css/desktop.css" rel="stylesheet" />
     <link href="/assest/css/movil.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geek</title>
   </head>
@@ -14,29 +18,27 @@
     <main>
       <section class="productos">
         <h2>MIS PRODUCTOS</h2>
-       
-        <div  class="contenedor" data-lista>
-         
-    
-        </div>
+
+        <div class="contenedor" data-lista></div>
       </section>
       <section class="panel">
         <h2>AGREGAR PRODUCTO</h2>
-        <form class="form" data-formulario >
+        <form class="form" data-formulario>
           <input type="text" placeholder="nombre..." data-nombre />
           <input type="number" placeholder="precio..." data-precio />
-          <input type="url" placeholder="imagen..." data-imagen/>
-          <div class="galeria-imagen">
-            <div  data-atras>
-              <i class="icono"> <<< </i>
-            </div>
-            <div class="imagen">
-              <img src="/assest/img/unsplash_6FDXGY9J6y4.svg" data-galeria/>
-
-            </div>
-            <div data-siguiente>
-              <i class="icono"> >>> </i>
-
+          <input type="url" placeholder="imagen..." data-imagen readonly/>
+          <div class="galeria">
+            <h4>Por seguridad solo se agrega de la selección</h4>
+            <div class="galeria-imagen" data-cont=2>
+              <div data-siguiente>
+                <i class="icon las la-arrow-circle-left"></i>
+              </div>
+              <div class="imagen">
+                <img src="https://i.postimg.cc/0QBKb33C/500.png" data-galeria />
+              </div>
+              <div data-atras>
+                <i class="icon las la-arrow-circle-right"></i>
+              </div>
             </div>
           </div>
           <div class="btn">
@@ -53,7 +55,5 @@
     </footer>
     <script src="/assest/js/mostrarProductos.js" type="module"></script>
     <script src="/assest/js/crearProducto.js" type="module"></script>
-   
-    
   </body>
 </html>
